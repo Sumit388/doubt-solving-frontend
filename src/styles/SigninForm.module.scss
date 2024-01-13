@@ -26,6 +26,11 @@
       letter-spacing: 5px;
     }
 
+    .submitButton[disabled] {
+      background: $grey;
+      cursor: not-allowed;
+    }
+
     .signupDescription {
       display: flex;
       justify-content: center;

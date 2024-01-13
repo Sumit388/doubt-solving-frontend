@@ -31,12 +31,14 @@ const TutorSignUp = ({ setSignin }) => {
   const [grade, setGrade] = useState(null);
   const [language, setLanguage] = useState(null);
   const [subjects, setSubjects] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = () => {
     if (!email || !password || !name || !grade || !subjects) {
       toast.error(fillAllFiledsMessage, toastSetting);
       return;
     }
+    setLoading(true);
     const body = {
       email,
       password,
@@ -53,6 +55,7 @@ const TutorSignUp = ({ setSignin }) => {
             "Tutor registered successfully. Please log in to continue.",
           toastSetting
         );
+        setLoading(false);
       })
       .catch((err) => {
         console.error(err?.message);
@@ -60,6 +63,7 @@ const TutorSignUp = ({ setSignin }) => {
           err?.response?.data?.message || err?.message || commonErrorMessage,
           toastSetting
         );
+        setLoading(false);
       });
   };
 
@@ -155,9 +159,11 @@ const TutorSignUp = ({ setSignin }) => {
           type="submit"
           className={Styles.subtmitButton}
           onClick={handleSubmit}
+          disabled={loading}
         >
-          Sign Up
+          {loading ? "Please wait..." : "Sign up"}
         </button>
+
         <div className={Styles.signupDescription}>
           {" "}
           If you are already a member. Please try{" "}

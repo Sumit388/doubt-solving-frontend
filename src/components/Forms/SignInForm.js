@@ -22,9 +22,10 @@ import Styles from "../../styles/SigninForm.module.scss";
 const SignInForm = ({ setSignin, userType }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const cookies = new Cookies();
-  
+
   const updatedCookies = (user) => {
     cookies.set("auth_token", user?.auth_token);
     cookies.set("user_role", user?.user_role);
@@ -34,8 +35,6 @@ const SignInForm = ({ setSignin, userType }) => {
     cookies.set("user_name", user?.user_name);
     cookies.set("email", user?.email);
     cookies.set("subjects", user?.subjects);
-
-    console.log(cookies.get("auth_token"))
   };
 
   const handleSubmit = () => {
@@ -51,6 +50,8 @@ const SignInForm = ({ setSignin, userType }) => {
       email,
       password,
     };
+
+    setLoading(true);
     axios
       .post(
         userType.value === "STUDENT" ? studentLogin : tutorLogin,
@@ -66,6 +67,7 @@ const SignInForm = ({ setSignin, userType }) => {
         window.open(
           `/${userType.value === "STUDENT" ? "students" : "tutors"}/dashboard`
         );
+        setLoading(false);
       })
       .catch((err) => {
         console.error(err?.message);
@@ -73,6 +75,7 @@ const SignInForm = ({ setSignin, userType }) => {
           err?.response?.data?.message || err?.message || commonErrorMessage,
           toastSetting
         );
+        setLoading(false);
       });
   };
 
@@ -108,8 +111,9 @@ const SignInForm = ({ setSignin, userType }) => {
           type="submit"
           className={Styles.subtmitButton}
           onClick={handleSubmit}
+          disabled={loading}
         >
-          Log In
+          {loading ? "Please wait..." : "Log In"}
         </button>
         <div className={Styles.signupDescription}>
           {" "}

@@ -26,12 +26,14 @@ const StudentSignUp = ({ setSignin }) => {
   const [name, setName] = useState("");
   const [grade, setGrade] = useState(null);
   const [language, setLanguage] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = () => {
     if (!email || !password || !name || !grade || !language) {
       toast.error(fillAllFiledsMessage, toastSetting);
       return;
     }
+    setLoading(true);
     const body = {
       email,
       password,
@@ -47,6 +49,7 @@ const StudentSignUp = ({ setSignin }) => {
             "Student registered successfully. Please log in to continue.",
           toastSetting
         );
+        setLoading(false);
       })
       .catch((err) => {
         console.error(err?.message);
@@ -54,6 +57,7 @@ const StudentSignUp = ({ setSignin }) => {
           err?.response?.data?.message || err?.message || commonErrorMessage,
           toastSetting
         );
+        setLoading(false);
       });
   };
 
@@ -133,8 +137,9 @@ const StudentSignUp = ({ setSignin }) => {
           type="submit"
           className={Styles.subtmitButton}
           onClick={handleSubmit}
+          disabled={loading}
         >
-          Sign Up
+          {loading ? "Please wait..." : "Sign up"}
         </button>
 
         <div className={Styles.signupDescription}>
