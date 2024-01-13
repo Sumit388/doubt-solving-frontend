@@ -1,0 +1,44 @@
+@use "../styles/Base" as *;
+
+.tutorDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 20px;
+
+  .detailsEntry {
+    background: $primary-blue;
+    padding: 0 20px;
+    color: $white;
+    border-radius: 10px;
+    flex-basis: 100%;
+
+    @include responsive($screen-768) {
+      flex-basis: auto;
+    }
+  }
+}
+
+.doubtsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+   .doubts {
+    width: 100%;
+    border: 1px solid $light-gray;
+    padding: 10px 10px 50px 10px;
+    position: relative;
+
+    .acceptButton {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      padding: 7px 14px;
+      background: $primary-blue;
+      color: $white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

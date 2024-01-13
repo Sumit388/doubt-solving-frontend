@@ -1,0 +1,39 @@
+$darkShadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+$darkShadowY: 1.647690773010254px 3.295381546020508px 6.590763092041016px 0px
+  rgba(0, 0, 0, 0.5);
+$inset-shadow: inset 2px 4px 30px 0 rgba(0, 0, 0, 0.1);
+$ultra-heavy-shadow: 4px 8px 25px 0 rgba(102, 114, 138, 0.25);
+$heavy-shadow: 4px 8px 20px 0 rgba(102, 114, 138, 0.15);
+$box-shadow: 4px 8px 30px 0 rgba(102, 114, 138, 0.1);
+$box-shadowX: 2px 4px 15px 0px rgba(0, 0, 0, 0.1);
+$box-shadowY: 4px 10px 60px 0 rgba(102, 114, 138, 0.2);
+$box-shadow-bottom: 2px 8px 10px rgba(0, 0, 0, 0.1);
+$shadow-header: 0px 0px 30px rgba(0, 0, 0, 0.2);
+$shadow-button: 0px 0px 5px 1.5px rgba(0, 0, 0, 0.25);
+$shadow-card: 2px 4px 30px rgba(0, 0, 0, 0.1);
+$popper-shadow: 4px 8px 100px rgba(0, 0, 0, 0.15);
+$btn-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+$map-card-shadow: 0px 2px 19px rgba(0, 0, 0, 0.2);
+$map-facilities-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3);
+$light-shadow: 0px 2px 19px rgba(0, 0, 0, 0.1);
+$sticky-tabs: 0px 0px 19px rgba(0, 0, 0, 0.1);
+
+:export {
+  dark-shadow: $darkShadow;
+  dark-shadowY: $darkShadowY;
+  inset-shadow: $inset-shadow;
+  ultra-heavy-shadow: $ultra-heavy-shadow;
+  heavy-shadow: $heavy-shadow;
+  box-shadow: $box-shadow;
+  box-shadowX: $box-shadowX;
+  box-shadowY: $box-shadowY;
+  shadow-header: $shadow-header;
+  shadow-button: $shadow-button;
+  shadow-card: $shadow-card;
+  popper-shadow: $popper-shadow;
+  btn-shadow: $btn-shadow;
+  map-card-shadow: $map-card-shadow;
+  map-facilities-shadow: $map-facilities-shadow;
+  light-shadow: $light-shadow;
+  sticky-tabs: $sticky-tabs;
+}

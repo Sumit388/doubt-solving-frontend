@@ -1,0 +1,318 @@
+// Colors
+$primary: #037a92;
+$dark-blue: #1e3b5b;
+$dark-blue2: #284d5d;
+$bright-yellow: #ffcc00;
+$light-yellow: #fefbf2;
+$bright-blue: #257a9e;
+$black: #1d1e1e;
+$black2: #8d8d8d;
+$off-black: #717171;
+$light: #eef1f7;
+$light2: #e8eaea;
+$white: #fff;
+$light-white: #ffffff1a;
+$dark-white: #f7f6f3;
+$offset-white: #b4b4b4;
+$light-primary: #e6f2f4;
+$light-blue: #d0eaec;
+$cyan-gray: #eeeeee66;
+$light-gray: #d1d1d1;
+$lightest-grey: #f4f6f7;
+$charcoal: #222222;
+$charcoal-grey: #313640;
+$off-grey: #00000026;
+$gold: #e39d3d;
+$error: #fdeded;
+$light-error: #5f2120;
+$warning: #fff4e5;
+$light-warning: #663c00;
+$info: #e5f6fd;
+$light-info: #014361;
+$success: #edf7ed;
+$light-success: #1e4620;
+$light-off-grey: #dfdfdf;
+$primary-blue: #2196f3;
+$charcoal-dark: #1e2021;
+$grey: #959fab;
+$light-grey: #e2e2e2;
+$warm-grey: #9b9b9b;
+$dim-gray: #0000001f;
+$dull-gray: #ced4da;
+$off-white: #eeeeee;
+$floral-white: #fff9f0;
+$nobel-gray: #a09f9f;
+$bg-light-warm: #f7f6f3;
+$bg-warm: #fcfcfc;
+$bg-dark-gray: #f9f9f9;
+$bg-charcoal: #2a2e31;
+$light-green: #418a41;
+$green: #149d4a;
+$light-black: #1a1919;
+$primary-color: #003466;
+$seaweed-blue: #037990;
+$light-cyan: #0ca39b;
+$navi-blue: #1f272e;
+$red: #ff0000;
+$dark-red: #d32f2f;
+$white-fade: #ffffff4d;
+$nero: #1e1e1e;
+$dark-gray: #2222224a;
+$solid-black: #000000;
+$bg-off-white: #f5f5f5;
+$bg-light-blue: #cde7ea;
+$medium-gray: #5b5b5b;
+$medium-white-smoke: #f1f1f17a;
+$brown-gray: #28465d66;
+$font-18-gray: #5b5b5b;
+$font-18-white-smoke: #f1f1f17a;
+$cyan-green: #8deea2;
+$font-18-white-smoke: #f1f1f17a;
+$amour: #f05d4e;
+$dull-black: #66728ad9;
+$opaque-gray: #f9f9f9;
+$off-blue: #037990;
+
+$facebook: #3b5998;
+$twitter: #00acee;
+$instagram: url(#rg);
+$youtube: #c4302b;
+$linkedin: #0072b1;
+$dark-gray-2: #b9b9b9;
+$premium-black: #16262e;
+$pale-yellow: #ddbd2a;
+$brass-yellow: #e2a13b;
+$gold-yellow: #e39d3d;
+$gold-orange: #f99e21;
+$yellow: #ffc845;
+$bluish: #00b1af;
+$bg-bluish-black: #14262e;
+$bg-gray: #f5f5f7;
+$font-primary: #037990;
+$border-grey: #c5c5c552;
+$dark-bluish: rgba(0, 177, 175, 0.2);
+$bg-faded-blue: #eff7fb;
+$bg-light-white: #fbfbfb;
+$dark-green: #017c3c;
+
+// UA colors
+$ua-primary: #f05d4e;
+$ua-secondary: #111a41;
+$ua-button-gradient: linear-gradient(270.01deg, #f05d4e 0%, #e97d40 100.03%);
+
+// Presets
+$disabled: #cccccc;
+
+// Opacity
+$bg-warm-99: #fcfcfc99;
+$dark-gray-80: #c6c6c680;
+$solid-black-0d: #0000000d;
+$solid-black-80: #00000080;
+$solid-black-2b: #0000002b;
+$bg-gray-light-60: #eeeeee99;
+
+// Gradients
+$primary-gradient: linear-gradient(
+  148.29deg,
+  $primary -2.7%,
+  $light-cyan 102.07%
+);
+$secondary-gradient: linear-gradient(
+  107.02deg,
+  rgba(40, 77, 93, 0.1) -16.09%,
+  rgba(3, 121, 144, 0.1) 50.82%,
+  rgba(0, 177, 175, 0.1) 119.13%
+);
+$progress-gradient: linear-gradient(
+  107.02deg,
+  $dark-blue2 -16.09%,
+  $font-primary 50.82%,
+  #00b1af 119.13%
+);
+$golden-gradient: linear-gradient(
+  271deg,
+  rgba(227, 157, 61, 0.1) 0%,
+  rgba(226, 161, 59, 0.1) 51.56%,
+  rgba(221, 189, 42, 0.1) 100%
+);
+$overlay-gradient: linear-gradient(
+  0deg,
+  rgba(0, 0, 0, 0.3) 0%,
+  rgba(0, 0, 0, 0.3) 100%
+);
+$black-gradient-overlay: linear-gradient(
+  180deg,
+  rgba(20, 38, 46, 0.57) 0%,
+  rgba(20, 38, 46, 0.38) 51.04%,
+  #14262e 100%
+);
+$imageOverlay-gradient: linear-gradient(
+  180deg,
+  rgba(20, 38, 46, 0.27) 17%,
+  rgba(20, 38, 46, 0.48) 30.04%,
+  #14262e 100%
+);
+$black-gradient-overlay-2: linear-gradient(
+  267deg,
+  rgba(20, 38, 46, 0.57) -8.86%,
+  rgba(20, 38, 46, 0.38) 28.98%,
+  #14262e 60.05%
+);
+$premium-gradient: linear-gradient(
+  271deg,
+  #e39d3d 0%,
+  #e2a13b 51.56%,
+  #ddbd2a 100%
+);
+$light-premium-gradient: linear-gradient(
+  271deg,
+  rgba(227, 157, 61, 0.8) 0%,
+  rgba(226, 161, 59, 0.8) 51.56%,
+  rgba(221, 189, 42, 0.8) 100%
+);
+
+$card-image-overlay: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0) 3.09%,
+  rgba(0, 0, 0, 0.7) 100%
+);
+
+$premium-card-gradient1: linear-gradient(
+  180deg,
+  rgba($premium-black, 0.2) -24.53%,
+  $premium-black 91.49%
+);
+
+$premium-card-gradient2: linear-gradient(
+  223deg,
+  rgba($premium-black, 0) 71.25%,
+  $premium-black 99.09%
+);
+
+$premium-card-gradient3: linear-gradient(
+  90deg,
+  rgba($premium-black, 0) 20.71%,
+  $premium-black 50%,
+  $premium-black 100%
+);
+
+$university-header-gradient: linear-gradient(
+  180deg,
+  rgba($black, 0) 0%,
+  rgba($black, 0.65) 100%
+);
+
+$about-us-header-gradient: linear-gradient(
+  346.39deg,
+  $dark-blue2 3.69%,
+  rgba($seaweed-blue, 0.5) 34.76%,
+  rgba($bluish, 0) 66.48%
+);
+
+$about-us-header-gradient2: linear-gradient(
+  110.03deg,
+  $dark-blue2 20.04%,
+  rgba($seaweed-blue, 0.5) 61.32%,
+  rgba($bluish, 0) 103.47%
+);
+// $darkShadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+
+:export {
+  primary: $primary;
+  dark-blue: $dark-blue;
+  dark-blue2: $dark-blue2;
+  bright-yellow: $bright-yellow;
+  light-yellow: $light-yellow;
+  bright-blue: $bright-blue;
+  black: $black;
+  black2: $black2;
+  off-black: $off-black;
+  light: $light;
+  light2: $light2;
+  white: $white;
+  light-white: $light-white;
+  dark-white: $dark-white;
+  offset-white: $offset-white;
+  light-primary: $light-primary;
+  light-blue: $light-blue;
+  light-gray: $light-gray;
+  lightest-grey: $lightest-grey;
+  charcoal: $charcoal;
+  charcoal-grey: $charcoal-grey;
+  off-grey: $off-grey;
+  light-off-grey: $light-off-grey;
+  charcoal-dark: $charcoal-dark;
+  grey: $grey;
+  light-grey: $light-grey;
+  warm-grey: $warm-grey;
+  dim-gray: $dim-gray;
+  dull-gray: $dull-gray;
+  off-white: $off-white;
+  nobel-gray: $nobel-gray;
+  bg-light-warm: $bg-light-warm;
+  bg-warm: $bg-warm;
+  bg-dark-gray: $bg-dark-gray;
+  bg-charcoal: $bg-charcoal;
+  light-green: $light-green;
+  green: $green;
+  light-black: $light-black;
+  primary-color: $primary-color;
+  light-cyan: $light-cyan;
+  navi-blue: $navi-blue;
+  red: $red;
+  white-fade: $white-fade;
+  nero: $nero;
+  dark-gray: $dark-gray;
+  solid-black: $solid-black;
+  bg-off-white: $bg-off-white;
+  bg-light-blue: $bg-light-blue;
+  medium-gray: $medium-gray;
+  medium-white-smoke: $medium-white-smoke;
+  brown-gray: $brown-gray;
+  font-18-gray: $font-18-gray;
+  font-18-white-smoke: $font-18-white-smoke;
+  amour: $amour;
+  opaque-gray: $opaque-gray;
+  off-blue: $off-blue;
+  facebook: $facebook;
+  twitter: $twitter;
+  instagram: $instagram;
+  youtube: $youtube;
+  linkedin: $linkedin;
+  dark-gray-2: $dark-gray-2;
+  premium-black: $premium-black;
+  pale-yellow: $pale-yellow;
+  brass-yellow: $brass-yellow;
+  gold-yellow: $gold-yellow;
+  yellow: $yellow;
+  bluish: $bluish;
+  bg-bluish-black: $bg-bluish-black;
+  bg-gray: $bg-gray;
+  font-primary: $font-primary;
+  disabled: $disabled;
+  bg-warm-99: $bg-warm-99;
+  dark-gray-80: $dark-gray-80;
+  solid-black-0d: $solid-black-0d;
+  solid-black-80: $solid-black-80;
+  solid-black-2b: $solid-black-2b;
+  primary-gradient: $primary-gradient;
+  secondary-gradient: $secondary-gradient;
+  progress-gradient: $progress-gradient;
+  overlay-gradient: $overlay-gradient;
+  black-gradient-overlay: $black-gradient-overlay;
+  imageOverlay-gradient: $imageOverlay-gradient;
+  black-gradient-overlay-2: $black-gradient-overlay-2;
+  premium-gradient: $premium-gradient;
+  light-premium-gradient: $light-premium-gradient;
+  gold: $gold;
+  cynaGreen: $cyan-green;
+  darkRed: $dark-red;
+  error: $error;
+  warning: $warning;
+  info: $info;
+  success: $success;
+  cyan-gray: $cyan-gray;
+  dullBlack: $dull-black;
+  gold-orange: $gold-orange;
+  bg-faded-blue: $bg-faded-blue;
+}

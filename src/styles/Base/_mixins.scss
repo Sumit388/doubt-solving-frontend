@@ -1,0 +1,132 @@
+@use "./variables.module.scss" as *;
+
+// media queries.
+@mixin responsive($screen) {
+  @if $screen == $screen-320 {
+    @media screen and (min-width: #{$screen-320}px) {
+      @content;
+    }
+  }
+  @if $screen == $screen-360 {
+    @media screen and (min-width: #{$screen-360}px) {
+      @content;
+    }
+  }
+  @if $screen == $screen-375 {
+    @media screen and (min-width: #{$screen-375}px) {
+      @content;
+    }
+  }
+  @if $screen == $screen-390 {
+    @media screen and (min-width: #{$screen-390}px) {
+      @content;
+    }
+  }
+  @if $screen == $screen-414 {
+    @media screen and (min-width: #{$screen-414}px) {
+      @content;
+    }
+  }
+
+  @if $screen == $screen-428 {
+    @media only screen and (min-width: #{$screen-428}px) {
+      @content;
+    }
+  }
+
+  @if $screen == $screen-768 {
+    @media only screen and (min-width: #{$screen-768}px) {
+      @content;
+    }
+  }
+
+  @if $screen == $screen-810 {
+    @media only screen and (min-width: #{$screen-810}px) {
+      @content;
+    }
+  }
+
+  @if $screen == $screen-991 {
+    @media only screen and (min-width: #{$screen-991}px) {
+      @content;
+    }
+  }
+
+  @if $screen == $screen-1024 {
+    @media only screen and (min-width: #{$screen-1024}px) {
+      @content;
+    }
+  }
+
+  @if $screen == $screen-1280 {
+    @media only screen and (min-width: #{$screen-1280}px) {
+      @content;
+    }
+  }
+
+  @if $screen == $screen-1440 {
+    @media only screen and (min-width: #{$screen-1440}px) {
+      @content;
+    }
+  }
+  @if $screen == $screen-1680 {
+    @media only screen and (min-width: #{$screen-1680}px) {
+      @content;
+    }
+  }
+  @if $screen == $screen-1700 {
+    @media only screen and (min-width: #{$screen-1700}px) {
+      @content;
+    }
+  }
+}
+
+// container
+@mixin container {
+  max-width: calc(1320px + 2 * 60px);
+  // width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include responsive($screen-768) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include responsive($screen-991) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include responsive($screen-1280) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @include responsive($screen-1440) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @include responsive($screen-1680) {
+    max-width: 1680px;
+    padding-left: 192px;
+    padding-right: 192px;
+  }
+  @include responsive($screen-1700) {
+    max-width: 1680px;
+    padding-left: 192px;
+    padding-right: 192px;
+  }
+}
+
+// hide scrollbar
+@mixin hideScroll {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge add Firefox */
+  & {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+  }
+}

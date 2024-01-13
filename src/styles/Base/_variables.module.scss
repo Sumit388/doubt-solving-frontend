@@ -1,0 +1,48 @@
+// Breakpoints.
+$screen-xs: 0;
+$screen-320: 320;
+$screen-360: 360;
+$screen-375: 375;
+$screen-390: 390;
+$screen-414: 414;
+$screen-428: 428;
+
+// Tablets
+$screen-768: 768;
+$screen-810: 810;
+$screen-991: 991;
+$screen-1024: 1024;
+
+// Desktops
+$screen-1280: 1280;
+$screen-1440: 1440;
+$screen-1680: 1680;
+$screen-1700: 1700;
+
+// Borders
+$primary-color-border: solid 1px rgba(3, 122, 146, 0.2);
+$heavy-primary-border: solid 1px rgb(3, 122, 146);
+$lightest-grey-border: solid 1px rgba(218, 218, 218, 0.5);
+$card-border: 1px solid rgba(180, 180, 180, 0.25);
+
+// Border Radius
+$primary-radius: 4px;
+$heavy-radius: 8px;
+
+:export {
+  screenXs: $screen-xs;
+  screen320: $screen-320;
+  screen360: $screen-360;
+  screen375: $screen-375;
+  screen390: $screen-390;
+  screen414: $screen-414;
+  screen428: $screen-428;
+  screen768: $screen-768;
+  screen810: $screen-810;
+  screen991: $screen-991;
+  screen1024: $screen-1024;
+  screen1280: $screen-1280;
+  screen1440: $screen-1440;
+  screen1680: $screen-1680;
+  screen1700: $screen-1700;
+}

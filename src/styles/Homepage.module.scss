@@ -1,0 +1,77 @@
+@use "../styles/Base" as *;
+
+.homeContainer {
+  height: 100vh;
+  padding-top: 15px;
+  width: 100%;
+  position: relative;
+
+  .headingContainer {
+    @include container();
+    box-shadow: $box-shadow;
+
+    h1 {
+      max-width: 100vw;
+      color: $charcoal;
+      font-size: $font-16;
+      padding-bottom: 15px;
+      position: sticky;
+      top: 0;
+
+      @include responsive($screen-768) {
+        font-size: $font-24;
+      }
+    }
+  }
+
+  .contentContainer {
+    @include container();
+    padding-top: 30px;
+    background-image: linear-gradient(135deg, $primary-blue 0%, $light-blue 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    @include responsive($screen-1280) {
+      flex-direction: row;
+    }
+
+    .descriptionContainer {
+      max-width: 100%;
+
+      @include responsive($screen-1280) {
+        max-width: 50%;
+      }
+
+      p {
+        color: $white;
+        font-size: $font-20;
+        letter-spacing: 2px;
+      }
+
+      .loginTypeContainer {
+        padding-top: 40px;
+        color: $black;
+        font-size: $font-20;
+        font-weight: 800;
+        letter-spacing: 10px;
+        display: flex;
+        gap: 10px;
+
+        .inputContainer {
+          width: 340px;
+        }
+      }
+    }
+
+    .formContainer {
+      width: 100%;
+      margin-top: 40px;
+
+      @include responsive($screen-1280) {
+        width: 50%;
+        margin-top: 0px;
+      }
+    }
+  }
+}

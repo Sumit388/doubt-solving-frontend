@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+// * Packages Import * //
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+// * Pages Import * //
+import Homepage from "./pages/Homepage";
+import StudentDashboard from "./pages/StudentDashboard";
+import TutorDashboard from "./pages/TutorDashboard";
+
+// * Utils Import * //
+import { getUserDetails } from "./utils/cookieChecker";
+
+// * Styles Import * //
+import "./App.css";
+import "react-toastify/dist/ReactToastify.min.css";
 
 function App() {
+  const user = getUserDetails();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Router>
+        <Switch>
+          <Route path="/students/dashboard">
+            {user.userRole === "STUDENT" ? (
+              <StudentDashboard />
+            ) : (
+              <h3>Please Log in to continue.</h3>
+            )}
+          </Route>
+          <Route path="/tutors/dashboard">
+            {user.userRole === "TUTOR" ? (
+              <TutorDashboard />
+            ) : (
+              <h3>Please Log in to continue.</h3>
+            )}
+          </Route>
+          <Route path="/">
+            <Homepage />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
